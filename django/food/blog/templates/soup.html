@@ -1,11 +1,65 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Луковый крем-суп</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="/static/icon/favicon-32x32.png" type='text/css'>
 </head>
-<body>
-    <a href="{% url 'home.html' %}"> Назад</a>
+<body id="bg_soup">
+    <header>
+        <h2 class="headline_soup">Пошаговое приготовление Лукового крем-супа.</h2>
+    </header>
+    <main>
+        <article>
+            <p class="line_soup">В луковом крем-супе практически нет никаких специй, что очень странно для французской кулинарии. Однако классический луковый суп имеет настолько насыщенный вкус, что не требует дополнительных пряностей. Луковые супы очень популярны с древних времен. Эти супы были известны и широко распространены в римскую эпоху правления. Из-за доступности и легкости выращивания лук был основной пищей для многих бедных семей. Сейчас луковый суп дополняют множеством изысканных добавок. </p>
+        </article>
+        
+        <article>
+            <h2 id="soup_name">Ингридиенты которые нам понадобятся:</h2>
+                <ul class="ingridients">
+                    <li>Лук-порей - 1 шт.</li>
+                    <li>Картофель - 4 шт.</li>
+                    <li>Репчатый лук - 1 шт.</li>
+                    <li>Сливки 10% - 150 мл.</li>
+                    <li>Ржаные сухарики - 100 г.</li>
+                    <li>Сливочное масло  - 30 г.</li>
+                    <li>Соль - по вкусу</li>
+                    <li>Молотый чёрный перец - по вкусу</li>
+                </ul>
+        </article>
+            
+        <article>
+            <header>
+                <h2 class="headline_soup">Процесс приготовления.</h2>
+            </header>
+            <div class="step">
+                <h3>Шаг 1.</h3>
+                <p>Лук-порей нарезать кольцами. В кастрюле растопить сливочное масло, обжарить лук-порей и репчатый до золотистого цвета.</p></p>
+                <img class="photo_soup" src="{% static 'img/soup_one.jpg' %}" alt="Нарезаный лук-порей и репчатый лук "> 
+                <h3>Шаг 2.</h3>
+                <p>Картофель нарезать кубиками.</p>
+                <img class="photo_soup" src="{% static 'img/soup_two.jpg' %}" alt="Картошка нарезана кубиками"> 
+                <h3>Шаг 3.</h3>
+                <p>Влить в кастрюлю воду и добавить картофель. Варить до приготовления картофеля.</p>  
+                <img class="photo_soup" src="{% static 'img/soup_free.jpg' %}" alt="Картошка варится"> 
+                <h3>Шаг 4.</h3>
+                <p>Измельчить все блендером.</p>  
+                <img class="photo_soup" src="{% static 'img/soup_four.jpg' %}" alt="Измельчение блендером"> 
+                <h3>Шаг 5.</h3>
+                <p>Добавить сливки и все хорошо перемешать.</p>
+                <img class="photo_soup" src="{% static 'img/soup_five.jpg' %}" alt="В картошку влили сливки"> 
+                <h3>Шаг 6.</h3>
+                <p>При подаче посыпать сухарями, добавить соль, перец.</p> 
+                <p>Луковый крем-суп готов! Приятного аппетита!</p>
+                <img class="photo_soup" src="{% static 'img/soup.jpg' %}" alt="Луковый крем-суп"> 
+            </div>
+            <a class="back" href="{% url 'home' %}"> Назад</a>
+        </article>
+
+        <img id="photo6" src="{% static 'img/soup_anim.jpg' %}" alt="Нарисованный Луковый крем-суп">
+    </main>
 </body>
 </html>
