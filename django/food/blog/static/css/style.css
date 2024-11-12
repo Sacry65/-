@@ -1,99 +1,260 @@
 body {
-    background-image: url(/food/blog/static/img/backround.webp);
-    background-size: contain; 
-    background-repeat: round;
-    }
-    
-    .title {
+    font-family: sans-serif;
+}
+
+#bg_home {
+    background-image: url('/static/img/backround.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bg_pasta {
+    background-image: url('/static/img/bg_pasta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bg_salat {
+    background-image: url('/static/img/bg_salat.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bg_soup {
+    background-image: url('/static/img/bg_soup.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 500px;
+    height: 300px;
+}
+
+.title {
     display: block;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     font-family: sans-serif;
     padding: 50px;
-    margin-top: 90px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
     
+.main {
+    text-align:center;
+    font-family: sans-serif;
+    line-height: 40px;
+    font-size: 25px;
+    hyphens: auto;
+}
+
+.back {
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 900px;
+}
+
+/* Главная страница */
+.headline_home {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.line_home {
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 30px;
+    line-height: 40px;
+    text-indent: 50px;
+    margin-left: 780px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
     
-    }
+#photo1 {
+    display: inline-block;
+    position: absolute;
+    bottom: 250px;
+    left: 80px;
+    width: 460px;  
+    height: 320px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 25px ;
+}
     
-    .main {
-        text-align:center;
-        font-family: sans-serif;
-        line-height: 40px;
-        font-size: 25px;
-        hyphens: auto;
-    }
+#photo2 {
+    display: inline-block;
+    position: absolute;
+    width: 460px;  
+    height: 320px;
+    bottom: -240px;
+    left: 80px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 25px ;
+}
     
-    h2 {
-        text-align: center;
-        text-decoration: underline;
-        font-weight: 500;
-        font-size: 40px;
-        padding-top: 30px;
-        padding-bottom: 40px;
+#photo3 {
+    display: inline-block;
+    position: absolute;
+    width: 460px;  
+    height: 320px;
+    bottom: -680px;
+    left: 80px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 25px ;
+}
     
-    }
+.down {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
     
-    p {
-        font-weight: lighter;
-        text-align: justify;
-        font-size: 30px;
-        line-height: 40px;
-        text-indent: 50px;
-        margin-left: 780px;
-        margin-right: 80px;
-        margin-bottom: 50px;
-        margin-top: 20px;
-    }
+#home_img {
+    cursor: pointer;
+}
     
-    .logo {
-        width: 500px;
-        height: 300px;
-        
-    }
+#home_img :hover {
+    transform: scale(1.3);
+    transition: all 0.5s ease;
+}
+
+/* Паста */
+.headline_pasta {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.line_pasta {   
+    font-weight: lighter;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 40px;
+}
+
+#pasta_name {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 80px;
+}
     
-    #photo1 {
-        display: block;
-        position: relative;
-        bottom: 1200px;
-        left: 80px;
-        width: 460px;  
-        height: 320px;
-        border-radius: 40px;
-        box-shadow: 8px 8px 25px ;
-    }
-    
-    #photo2 {
-        display: block;
-        position: relative;
-        width: 460px;  
-        height: 320px;
-        bottom: 1070px;
-        left: 80px;
-        border-radius: 40px;
-        box-shadow: 8px 8px 25px ;
-    }
-    
-    #photo3 {
-        display: block;
-        position: relative;
-        width: 460px;  
-        height: 320px;
-        bottom: 970px;
-        left: 80px;
-        border-radius: 40px;
-        box-shadow: 8px 8px 25px ;
-    }
-    
-    .down {
-        font-size: 14px;
-    }
-    
-    #photo1, #photo2, #photo3 {
-        cursor: pointer;
-    }
-    
-    img:hover {
-        transform: scale(1.3);
-        transition: all 0.5s ease;
-    }
+.ingridients {
+    text-align: left;
+    font-size: 23px;
+    padding-left: 120px;
+    line-height: 40px;
+    padding-bottom: 60px;
+}
+
+.step {
+    text-align: center;
+    font-size: 23px;
+}
+
+#photo4 {
+    display: inline-block;
+    position: relative;
+    left: 1050px;
+    bottom: 6040px;
+    width: 550px;  
+    height: 350px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 25px ;
+}
+
+.photo_pasta {
+    width: 780px;
+    height: 550px;
+}
+
+/* Салат */
+.headline_salat {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.line_salat {   
+    font-weight: lighter;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 40px;
+}
+
+#salat_name {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+.photo_salat {
+    width: 780px;
+    height: 550px;
+}
+
+#photo5 {
+    display: inline-block;
+    position: relative;
+    left: 1100px;
+    bottom: 4725px;
+    width: 400px;  
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 25px ;
+}
+
+/* Суп */
+.headline_soup {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.line_soup {   
+    font-weight: lighter;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 40px;
+}
+
+#soup_name {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+.photo_soup {
+    width: 780px;
+    height: 550px;
+}
+
+#photo6 {
+    display: inline-block;
+    position: relative;
+    left: 1100px;
+    bottom: 4740px;
+    width: 450px;  
+    height: 400px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 25px ;
+}
